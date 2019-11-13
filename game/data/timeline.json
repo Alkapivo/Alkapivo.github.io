@@ -11,19 +11,19 @@
                             0.05
                         ],
                         "offsetBottom": [
-                            0.1,
+                            0.15,
                             0.001
                         ],
                         "offsetTop": [
-                            0.1,
+                            0.15,
                             0.001
                         ],
                         "topLineWidth": [
-                            0.1,
+                            0.15,
                             0.001
                         ],
                         "bottomLineWidth": [
-                            0.9,
+                            0.85,
                             0.001
                         ],
                         "angle": [
@@ -31,8 +31,8 @@
                             1
                         ],
                         "colorGridBackground": [
-                            "#320717CC",
-                            0.001
+                            "#000000FF",
+                            1.0
                         ],
                         "verticalScreens": [
                             1,
@@ -43,19 +43,6 @@
                             1
                         ],
                         "isGridFrameCleaned": true
-                    }
-                }
-            },
-            {
-                "type": "ShaderEvent",
-                "data": {
-                    "name": "LED",
-                    "duration": 3,
-                    "data": {
-                        "brightness": 1.5,
-                        "ledSize": [
-                            80
-                        ]
                     }
                 }
             },
@@ -132,6 +119,10 @@
                         ],
                         "horizontalScreens": [
                             2,
+                            0.01
+                        ],
+                        "colorGridBackground": [
+                            "#03031ED2",
                             0.01
                         ]
                     }
@@ -223,6 +214,52 @@
                             ]
                         }
                     ]
+                }
+            }
+        ]
+    },
+    {
+        "time": 24.3,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "colorGridBackground": [
+                            "#372691CC",
+                            0.005
+                        ],
+                        "offsetTop": [
+                            0.05,
+                            0.001
+                        ],
+                        "topLineWidth": [
+                            0.1,
+                            0.001
+                        ],
+                        "offsetBottom": [
+                            0.05,
+                            0.001
+                        ],
+                        "bottomLineWidth": [
+                            0.9,
+                            0.001
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 26.4,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "isGridFrameCleaned": false,
+                        "swingGrid": true
+                    }
                 }
             }
         ]
@@ -383,14 +420,6 @@
                             "",
                             ""
                         ]
-                    }
-                }
-            },
-            {
-                "type": "GridEvent",
-                "data": {
-                    "fields": {
-                        "isGridFrameCleaned": false
                     }
                 }
             }
@@ -1626,7 +1655,12 @@
                 "type": "GridEvent",
                 "data": {
                     "fields": {
-                        "isGridFrameCleaned": true
+                        "isGridFrameCleaned": true,
+                        "swingGrid": false,
+                        "colorGridBackground": [
+                            "#79076dA0",
+                            1.0
+                        ]
                     }
                 }
             }
@@ -1787,6 +1821,17 @@
                             "",
                             "",
                             ""
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "colorGridBackground": [
+                            "#5F0413A2",
+                            0.01
                         ]
                     }
                 }
@@ -2109,6 +2154,31 @@
                             "",
                             "",
                             ""
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "time": 46.7,
+        "events": [
+            {
+                "type": "ParticleEvent",
+                "data": {
+                    "particle": "particle_fusion",
+                    "fields": {
+                        "system": "foreground",
+                        "amount": 50,
+                        "duration": 5,
+                        "emitterInterval": 0.2,
+                        "positionBegin": [
+                            0.5,
+                            0.5
+                        ],
+                        "positionEnd": [
+                            0.5,
+                            0.5
                         ]
                     }
                 }
@@ -2645,6 +2715,50 @@
         ]
     },
     {
+        "time": 57,
+        "events": [
+            {
+                "type": "GridEvent",
+                "data": {
+                    "fields": {
+                        "channels": [
+                            24,
+                            0.05
+                        ],
+                        "offsetBottom": [
+                            0.1,
+                            0.001
+                        ],
+                        "offsetTop": [
+                            0.21,
+                            0.001
+                        ],
+                        "topLineWidth": [
+                            0.1,
+                            0.001
+                        ],
+                        "bottomLineWidth": [
+                            0.9,
+                            0.001
+                        ],
+                        "colorGridBackground": [
+                            "#0E4D04FF",
+                            0.01
+                        ],
+                        "verticalScreens": [
+                            2,
+                            0.005
+                        ],
+                        "horizontalScreens": [
+                            2,
+                            0.005
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
         "time": 58,
         "events": [
             {
@@ -2724,7 +2838,19 @@
                 "type": "GridEvent",
                 "data": {
                     "fields": {
-                        "isGridFrameCleaned": false
+                        "isGridFrameCleaned": false,
+                        "verticalScreens": [
+                            1,
+                            0.01
+                        ],
+                        "horizontalScreens": [
+                            1,
+                            0.01
+                        ],
+                        "colorGridBackground": [
+                            "#06011AA2",
+                            0.01
+                        ]
                     }
                 }
             }
@@ -2761,13 +2887,34 @@
         ]
     },
     {
-        "time": 85.3,
+        "time": 87.5,
         "events": [
             {
                 "type": "GridEvent",
                 "data": {
                     "fields": {
-                        "isGridFrameCleaned": true
+                        "isGridFrameCleaned": true,
+                        "swingGrid": true,
+                        "channels": [
+                            12,
+                            0.05
+                        ],
+                        "offsetBottom": [
+                            0.1,
+                            0.001
+                        ],
+                        "offsetTop": [
+                            0.1,
+                            0.001
+                        ],
+                        "topLineWidth": [
+                            0.6,
+                            0.001
+                        ],
+                        "bottomLineWidth": [
+                            0.9,
+                            0.001
+                        ]
                     }
                 }
             }
