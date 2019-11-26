@@ -1,0 +1,733 @@
+[
+	{
+		"time": 0.0,
+		"events": [
+			{
+				"type": "GridEvent",
+				"data": {
+					"fields": {
+						"channels": [ 8, 0.05 ],
+						"offsetBottom": [ 0.1, 0.001 ],
+						"offsetTop": [ 0.1, 0.001 ],
+						"topLineWidth": [ 0.1, 0.001 ],
+						"bottomLineWidth": [ 0.9, 0.001 ],
+						"angle": [ 4096, 0.02 ],
+						"colorGridBackground": [ "#ec008cCC", 0.001 ]
+
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 1.5,
+					"data": {
+						"brightness": [ 0.5, 1.5, 0.001 ],
+						"ledSize": [ 1, 100, 0.01 ]
+					}
+				}
+			},
+			{
+				"type": "BossEvent",
+				"data": {
+					"type": "dzban"
+				}
+			},
+            {
+                "type": "AudioEvent",
+                "data": {
+                    "assetName": "asset_ost_policje_nalezy_pierdolic",
+                    "priority": 100,
+                    "loop": true
+                }
+            }
+		]
+	},
+	{
+		"time": 1.8,
+		"events": [
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "Sketch",
+					"duration": 0.9,
+					"data": {
+						"intensity": [ 0.6, 1.8, 0.02 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "Wave",
+					"duration": 1.9,
+					"data": {
+						"amount": [ 20, 80, 0.2, 0.02 ],
+						"distortion": 20,
+						"speed": [ 0.05 ],
+						"time": [ 0, 1000, 1 ]
+					}
+				}
+			}
+		]
+	},
+	{
+		"time": 3.2,
+		"events": [
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "Thermal",
+					"duration": 3.4,
+					"data": {}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "Wave",
+					"duration": 1.4,
+					"data": {
+						"amount": [ 20, 80, 0.2, 0.02 ],
+						"distortion": 20,
+						"speed": [ 0.05 ],
+						"time": [ 0, 1000, 1 ]
+					}
+				}
+			}
+		]
+	},
+	{
+		"time": 4.8000,
+		"events": [
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 0.1,
+					"data": {
+						"brightness": 1.5,
+						"ledSize": [ 20, 40, 0.0005 ]
+					}
+				}
+			}
+		]
+	},
+	{
+		"time": 5.0000,
+		"events": [
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 0.7,
+					"data": {
+						"brightness": 1.0,
+						"ledSize": [ 100, 120, 0.0005 ]
+					}
+				}
+			}
+		]
+	},
+	{
+		"time": 5.7300,
+		"events": [
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 0.65,
+					"data": {
+						"brightness": 0.7,
+						"ledSize": [ 80, 120, 0.0005 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "Revert",
+					"duration": 2.8,
+					"data": {}
+				}
+			}
+		]
+	},
+	{
+		"time": 6.0000,
+		"events": [
+			{
+				"type": "GridEvent",
+				"data": {
+					"fields": {
+						"colorGridBackground": [ "#090717CC", 0.001 ]
+					}
+				}
+			},
+			{
+				"type": "ShroomEvent",
+				"data": {
+					"fields": {
+						"position": [ 0.5, 0.0 ]
+					}
+				}
+			}
+		]
+	},
+	{
+		"time": 6.1000,
+		"events": [
+			{
+				"type": "ShroomEmitterEvent",
+				"data": {
+					"amount": 3,
+					"duration": 20.0,
+					"interval": 1.6,
+					"templates": [
+                        {
+                            "sprite": "asset_sprite_gta_car_police",
+                            "type": {
+                                "name": "good",
+                                "randomShader": true
+                            },
+                            "speedValues": [
+                                0.003
+                            ],
+                            "texts": [
+                                "bagiety"
+                            ]
+                        }
+                    ]
+				}
+				
+			}
+		]
+	},
+	{
+		"time": 6.3000,
+		"events": [
+			{
+				"type": "GridEvent",
+				"data": {
+					"fields": {
+						"channels": [ 8, 0.05 ],
+						"offsetBottom": [ 0.1, 0.001 ],
+						"offsetTop": [ 0.1, 0.001 ],
+						"topLineWidth": [ 0.1, 0.005 ],
+						"bottomLineWidth": [ 0.9, 0.001 ],
+						"angle": [ -1920, 0.05 ]
+					}
+				}
+			},
+			{
+				"type": "ShroomEvent",
+				"data": {
+					"fields": {
+						"position": [ 0.5, 0.0 ]
+					}
+				}
+			}
+		]
+	},
+	{
+		"time": 6.9000,
+		"events": [
+			{
+				"type": "ShroomEmitterEvent",
+				"data": {
+					"amount": 1,
+					"duration": 20.0,
+					"interval": 1.0
+				}
+			}
+		]
+	},
+	{
+		"time": 8.0000,
+		"events": [
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 0.6,
+					"data": {
+						"brightness": 0.7,
+						"ledSize": [ 120, 40, 0.005 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 0.6,
+					"data": {
+						"brightness": [ 1.5, 0.9, 0.001 ],
+						"ledSize": [ 40, 120, 0.005, 0.001 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 0.2,
+					"data": {
+						"brightness": 1.0,
+						"ledSize": [ 50, 80, 0.005 ]
+					}
+				}
+			}
+		]
+	},
+	{
+		"time": 9.2,
+		"events": [
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 0.2,
+					"data": {
+						"brightness": 1.0,
+						"ledSize": 100
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 0.07,
+					"data": {
+						"brightness": 1.0,
+						"ledSize": [ 120, 30, 0.005 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 0.13,
+					"data": {
+						"brightness": 1.0,
+						"ledSize": [ 40, 80, 0.01 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "Emboss",
+					"duration": 0.3,
+					"data": {}
+				}
+			}
+		]
+	},
+	{
+		"time": 12.3,
+		"events": [
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 0.2,
+					"data": {
+						"brightness": 1.0,
+						"ledSize": [ 120, 30, 0.005 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 0.13,
+					"data": {
+						"brightness": 1.0,
+						"ledSize": [ 120, 30, 0.005 ]
+					}
+				}
+			}
+		]
+	},
+	{
+		"time": 12.7,
+		"events": [
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 0.1,
+					"data": {
+						"brightness": 1.0,
+						"ledSize": [ 30, 120, 0.005 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 0.07,
+					"data": {
+						"brightness": 1.0,
+						"ledSize": [ 120, 30, 0.005 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "Mosaic",
+					"duration": 1.2,
+					"data": {
+						"amount": [ 80, 110, 0.5 ]
+					}
+				}
+			}
+		]
+	},
+	{
+		"time": 13.1,
+		"events": [
+			{
+				"type": "GridEvent",
+				"data": {
+					"fields": {
+						"colorGridBackground": [ "#17135cCC", 0.001 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 0.2,
+					"data": {
+						"brightness": 1.0,
+						"ledSize": [ 120, 30, 0.005 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "Magnify",
+					"duration": 3.8,
+					"data": {
+						"positionX": [ 0.3, 0.8, 0.001 ],
+						"positionY": 0.5,
+						"radius": [ 0.25, 0.40, 0.01 ],
+						"minZoom": [ 0.40, 0.60, 0.01 ],
+						"maxZoom": [ 0.60, 0.80, 0.01 ]
+					}
+				}
+			}
+		]
+	},
+	{
+		"time": 14.5,
+		"events": [
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 1.8,
+					"data": {
+						"brightness": 1.0,
+						"ledSize": [ 100, 50, 0.01 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 1.8,
+					"data": {
+						"brightness": 1.2,
+						"ledSize": [ 50, 100, 0.01 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "Revert",
+					"duration": 0.8,
+					"data": {}
+				}
+			}
+		]
+	},
+	{
+		"time": 15.1,
+		"events": [
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "ShockWave",
+					"duration": 3.0,
+					"data": {
+						"positionX": 0.5,
+						"positionY": 0.5,
+						"amplitude": 20,
+						"refraction": 1.3,
+						"width": 0.3,
+						"time": [ 0.2, 0.8, 0.002 ]
+					}
+				}
+			}
+		]
+	},
+	{
+		"time": 23.2,
+		"events": [
+			{
+				"type": "GridEvent",
+				"data": {
+					"fields": {
+						"channels": [ 12, 0.01 ],
+						"offsetBottom": [ 0.2, 0.001 ],
+						"offsetTop": [ 0.2, 0.001 ],
+						"topLineWidth": [ 0.3, 0.001 ],
+						"bottomLineWidth": [ 0.7, 0.001] ,
+						"isGridFrameCleaned": false
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "ShockWave",
+					"duration": 3.0,
+					"data": {
+						"positionX": 0.5,
+						"positionY": 0.5,
+						"amplitude": 20,
+						"refraction": 1.3,
+						"width": 0.3,
+						"time": [ 0.2, 0.8, 0.002 ]
+					}
+				}
+			}
+		]
+	},
+	{
+		"time": 28.3,
+		"events": [
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 2.2,
+					"data": {
+						"brightness": 1.0,
+						"ledSize": [ 120, 30, 0.005 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 4.13,
+					"data": {
+						"brightness": 1.0,
+						"ledSize": [ 120, 30, 0.005 ]
+					}
+				}
+			}
+		]
+	},
+	{
+		"time": 30,
+		"events": [
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "Sketch",
+					"duration": 0.9,
+					"data": {
+						"intensity": [ 0.6, 1.8, 0.02 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "Wave",
+					"duration": 1.9,
+					"data": {
+						"amount": [ 20, 80, 0.2, 0.02 ],
+						"distortion": 20,
+						"speed": [ 0.05 ],
+						"time": [ 0, 1000, 1 ]
+					}
+				}
+			},
+			{
+				"type": "GridEvent",
+				"data": {
+					"fields": {
+						"channels": [ 8, 0.05],
+						"offsetBottom": [ 0.1, 0.001],
+						"offsetTop": [ 0.1, 0.001],
+						"topLineWidth": [ 0.1, 0.001],
+						"bottomLineWidth": [ 0.9, 0.001]
+					}
+				}
+			}
+		]
+	},
+	{
+		"time": 34.2,
+		"events": [
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "Mosaic",
+					"duration": 3.2,
+					"data": {
+						"amount": [ 80, 110, 0.5 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 1.07,
+					"data": {
+						"brightness": 1.0,
+						"ledSize": [ 120, 30, 0.005 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "LED",
+					"duration": 1.13,
+					"data": {
+						"brightness": 1.0,
+						"ledSize": [ 40, 80, 0.01 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "Emboss",
+					"duration": 1.3,
+					"data": {}
+				}
+			}
+		]
+	},
+	{
+		"time": 38.1,
+		"events": [
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "ShockWave",
+					"duration": 3.0,
+					"data": {
+						"positionX": 0.5,
+						"positionY": 0.5,
+						"amplitude": 20,
+						"refraction": 1.3,
+						"width": 0.3,
+						"time": [ 0.2, 0.8, 0.002 ]
+					}
+				}
+			},
+			{
+				"type": "GridEvent",
+				"data": {
+					"fields": {
+						"channels": [ 8, 0.05 ],
+						"offsetBottom": [ 0.1, 0.001 ],
+						"offsetTop": [ 0.4, 0.001 ],
+						"topLineWidth": [ 0.01, 0.001 ],
+						"bottomLineWidth": [ 0.9, 0.001 ],
+						"isGridFrameCleaned": true
+					}
+				}
+			}
+		]
+	},
+	{
+		"time": 41.2,
+		"events": [
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "Mosaic",
+					"duration": 3.2,
+					"data": {
+						"amount": [ 80, 250, 0.5 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "Wave",
+					"duration": 1.9,
+					"data": {
+						"amount": [ 20, 80, 0.2, 0.02 ],
+						"distortion": 20,
+						"speed": [ 0.05 ],
+						"time": [ 0, 1000, 1 ]
+					}
+				}
+			}
+		]
+	},
+	{
+		"time": 45.2,
+		"events": [
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "Mosaic",
+					"duration": 3.2,
+					"data": {
+						"amount": [ 80, 250, 0.5 ]
+					}
+				}
+			},
+			{
+				"type": "ShaderEvent",
+				"data": {
+					"name": "Wave",
+					"duration": 1.9,
+					"data": {
+						"amount": [ 20, 80, 0.2, 0.02 ],
+						"distortion": 20,
+						"speed": [ 0.05 ],
+						"time": [ 0, 1000, 1 ]
+					}
+				}
+			},
+			{
+				"type": "GridEvent",
+				"data": {
+					"fields": {
+						"channels": [ 8, 0.05 ],
+						"offsetBottom": [ 0.1, 0.001 ],
+						"offsetTop": [ 0.3, 0.001 ],
+						"topLineWidth": [ 0.01, 0.001 ],
+						"bottomLineWidth": [ 0.9, 0.001 ]
+					}
+				}
+			}
+		]
+	}
+]
