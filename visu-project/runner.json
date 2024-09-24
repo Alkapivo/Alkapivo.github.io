@@ -2,8 +2,8 @@
 "visu_project.data",
 "visu_project.html",
 "visu_project.js",
-"visu_project.wasm" ], "manifestFilesMD5" : [ "8aaa328da36f2deead938ef2eb831b97",
-"54c2d6d66bc3f8145dacbfe2bd779ced",
+"visu_project.wasm" ], "manifestFilesMD5" : [ "7dedc0729021098587519bc32bccef61",
+"79e2f17193b23ade7ff36aaccd6312dc",
 "0e96d625da332cb7d06d92b74724f5fe",
-"c0ba106f58ab9fa7f90a8a22fd748c4c",
-"7f06190a677c32ea15f05551eaece313" ], "mainJS" : "visu_project.js",  "unx": "game.unx", "index": "index.html", "runner": {"version": "2024.6.1.208", "yyc": true}}
+"a4110a51aa6a3d74ef4acf6e0a568478",
+"686ae6708074d1986787232cde7f45ff" ], "mainJS" : "visu_project.js",  "unx": "game.unx", "index": "index.html", "runner": {"version": "2024.6.1.208", "yyc": true}}
