@@ -1,3 +1,7 @@
 {
-  "version": "250320"
+  "current": {
+    "Windows": {
+      "version": "25.03.20"
+    }
+  }
 }
