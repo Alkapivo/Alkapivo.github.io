@@ -1,6 +1,6 @@
 {
   "model":"io.alkapivo.core.util.VersionConfig",
-  "version"1,
+  "version":1,
   "data": {
     "current": {
       "Windows": {
