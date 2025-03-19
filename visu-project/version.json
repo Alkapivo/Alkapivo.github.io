@@ -1,7 +1,11 @@
 {
-  "current": {
-    "Windows": {
-      "version": "25.03.20"
+  "model":"io.alkapivo.core.util.VersionConfig",
+  "version"1,
+  "data": {
+    "current": {
+      "Windows": {
+        "version": "25.03.20"
+      }
     }
   }
 }
