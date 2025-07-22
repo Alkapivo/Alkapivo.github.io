@@ -449,6 +449,9 @@
                 console.log(new Date().toISOString(), "Force resize event")
                 window.dispatchEvent(new Event('resize'));
                 ensureAspectRatio();
+
+                spinnerElement.style.display = "none";
+                canvasElement.style.display = "block";
               }, 2500);
             }
             if (element) {
@@ -490,8 +493,8 @@
             // If there are no status text, we are finished and can display
             // the canvas and hide the spinner
             if (!text) {
-              spinnerElement.style.display = "none";
-              canvasElement.style.display = "block";
+              //spinnerElement.style.display = "none";
+              //canvasElement.style.display = "block";
             }
           }
           statusElement.innerHTML = text;
@@ -629,10 +632,10 @@
       function manifestFiles()
       {
         return [ "game.unx",
-"visu_project.data",
-"visu_project.html",
-"visu_project.js",
-"visu_project.wasm" ].join( ";");
+"index.html",
+"visu.data",
+"visu.js",
+"visu.wasm" ].join( ";");
       }
 
       function manifestFilesMD5()
@@ -853,6 +856,6 @@
         lockOrientationIfSupported();
       });
     </script>
-    <script async type="text/javascript" src="visu_project.js?v=2137"></script>
+    <script async type="text/javascript" src="visu.js?v=2138"></script>
   </body>
 </html>
