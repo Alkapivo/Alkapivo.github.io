@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-    <title>GXC Game</title>
+    <title>visu-project</title>
     <style>
       @-webkit-keyframes rotation {
         from {
@@ -382,6 +382,25 @@
 
 
     <script type="text/javascript">
+
+      // Feature detection.
+      const supportsKeyboardLock =
+          ('keyboard' in navigator) && ('lock' in navigator.keyboard);
+
+      if (supportsKeyboardLock) {
+        document.addEventListener('fullscreenchange', async () => {
+          if (document.fullscreenElement) {
+            // The magic happens here… 🦄
+            await navigator.keyboard.lock(['Escape']);
+            console.log('Keyboard locked.');
+            return;
+          }
+          navigator.keyboard.unlock();
+          console.log('Keyboard unlocked.');
+        });
+      }
+
+
       const CHANGE_ASPECT_RATIO = true;
 
       var bodyElement = document.getElementsByTagName("body")[0];
