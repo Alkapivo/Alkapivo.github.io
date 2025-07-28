@@ -362,8 +362,8 @@
       <div class="emscripten" id="status">Downloading...</div>
 
       <progress value="0" max="100" id="progress" hidden="1"></progress>
-      <img id="QRCode" class="qrCode" src="runner.svg" alt="URL QR Code" hidden="1"></img>
-      <img id="QR2Code" class="qrCode" src="runnerLocal.svg" alt="URL QR2 Code" hidden="1"></img>
+      <img id="QRCode" class="qrCode" alt="URL QR Code" hidden="1"></img>
+      <img id="QR2Code" class="qrCode" alt="URL QR2 Code" hidden="1"></img>
     </div>
     <div class="multiplayer-stats" id="multiplayer-stats">
       [no stats available]
@@ -382,25 +382,6 @@
 
 
     <script type="text/javascript">
-
-      // Feature detection.
-      const supportsKeyboardLock =
-          ('keyboard' in navigator) && ('lock' in navigator.keyboard);
-
-      if (supportsKeyboardLock) {
-        document.addEventListener('fullscreenchange', async () => {
-          if (document.fullscreenElement) {
-            // The magic happens here… 🦄
-            await navigator.keyboard.lock(['Escape']);
-            console.log('Keyboard locked.');
-            return;
-          }
-          navigator.keyboard.unlock();
-          console.log('Keyboard unlocked.');
-        });
-      }
-
-
       const CHANGE_ASPECT_RATIO = true;
 
       var bodyElement = document.getElementsByTagName("body")[0];
@@ -614,34 +595,29 @@
       }
 
       var g_pWadLoadCallback = undefined;
-      function setWadLoadCallback( _wadLoadCallback ) 
-      {
+      function setWadLoadCallback( _wadLoadCallback ) {
         g_pWadLoadCallback = _wadLoadCallback;
       }
 
       var g_pAddAsyncMethod = -1;
 
-      function setAddAsyncMethod( asyncMethod )
-      {
+      function setAddAsyncMethod( asyncMethod ) {
         g_pAddAsyncMethod = asyncMethod;
       }
 
       var g_pJSExceptionHandler = undefined;
 
-      function setJSExceptionHandler( exceptionHandler )
-      {
+      function setJSExceptionHandler( exceptionHandler ) {
         if (typeof exceptionHandler == "function") {
             g_pJSExceptionHandler = exceptionHandler;
         } // end if
       } // end setJSExceptionHandler
 
-      function hasJSExceptionHandler()
-      {
+      function hasJSExceptionHandler() {
         return (g_pJSExceptionHandler != undefined) && (typeof g_pJSExceptionHandler == "function");
       } // end hasJSExceptionHandler
 
-      function doJSExceptionHandler( exceptionJSON )
-      {
+      function doJSExceptionHandler( exceptionJSON ) {
         if (typeof g_pJSExceptionHandler == "function") {
           var exception = JSON.parse( exceptionJSON );
           g_pJSExceptionHandler( exception );
@@ -666,13 +642,11 @@
 "48d8efa63c7d877606302f1a6b71091b" ];
       }
 
-      function onFirstFrameRendered()
-      {
+      function onFirstFrameRendered() {
           //console.log("First frame rendered!");
       }
 
-      function onGameSetWindowSize(width,height)
-      {
+      function onGameSetWindowSize(width,height) {
           console.log("Window size set to width: " + width + ", height: " + height);
 
           startingHeight = height;
@@ -680,7 +654,7 @@
           startingAspect = startingWidth / startingHeight;
       }
 
-    function triggerAd(adId, _callback_beforeAd, _callback_afterAd, _callback_adDismissed, _callback_adViewed, _callback_adbreakDone) {
+      function triggerAd(adId, _callback_beforeAd, _callback_afterAd, _callback_adDismissed, _callback_adViewed, _callback_adbreakDone) {
        // need to take a copy of the RValues represented
        var pRValueCopy = triggerAdPrefix( _callback_beforeAd, _callback_afterAd, _callback_adDismissed, _callback_adViewed, _callback_adbreakDone );
        var pCallbackBeforeAd = pRValueCopy + (0*16);
@@ -873,8 +847,25 @@
       setWadLoadCallback(() => {
         enterFullscreenIfSupported();
         lockOrientationIfSupported();
+
+        // Feature detection.
+        const supportsKeyboardLock =
+          ('keyboard' in navigator) && ('lock' in navigator.keyboard);
+        
+        if (supportsKeyboardLock) {
+          document.addEventListener('fullscreenchange', async () => {
+            if (document.fullscreenElement) {
+              // The magic happens here… 🦄
+              await navigator.keyboard.lock(['Escape']);
+              console.log('Keyboard locked.');
+              return;
+            }
+            navigator.keyboard.unlock();
+            console.log('Keyboard unlocked.');
+          });
+        }
       });
     </script>
-    <script async type="text/javascript" src="visu.js?v=2138"></script>
+    <script async type="text/javascript" src="visu.js?v=2139"></script>
   </body>
 </html>
